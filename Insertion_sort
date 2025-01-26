@@ -1,0 +1,24 @@
+
+# Online Python - IDE, Editor, Compiler, Interpreter
+
+Insertion Sort 
+
+MyArray = [3, 1, 5]
+
+print(len(MyArray))
+
+def sorting_algorithm(myArray): 
+        for items in MyArray: 
+            i = 0
+            j = 1 
+            while j < len(MyArray):
+                if myArray[j] < myArray[i]:
+                    tmp = myArray[j]
+                    myArray[j] = myArray[i]
+                    myArray[i] = tmp
+                i += 1 
+                j += 1 
+        return MyArray
+        
+print(sorting_algorithm(MyArray))
+            
